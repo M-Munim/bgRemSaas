@@ -5,12 +5,14 @@ import BuyCredit from './pages/BuyCredit'
 import Result from './pages/Result'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+// import { SignInButton } from '@clerk/clerk-react'
 
 
 const App = () => {
   return (
     <div className='min-h-screen bg-slate-50'>
       <Navbar />
+      {/* <SignInButton /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/buy-credit" element={<BuyCredit />} />
