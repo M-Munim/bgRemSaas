@@ -2,6 +2,7 @@ import 'dotenv/config'
 import express from 'express'
 import cors from 'cors'
 import connectDB from './configs/mongodb.js'
+import userRouter from './routes/userRoutes.js'
 
 // DB config
 await connectDB()
@@ -17,6 +18,8 @@ app.use(express.json())
 app.get('/', (req, res) => {
     res.status(200).send('Hello World!s')
 })
+
+app.use('/api/user', userRouter)
 
 // Listener
 app.listen(port, () => {
