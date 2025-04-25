@@ -1,0 +1,8 @@
+config > all config files DB config etc
+controllers > controller functions with BE Api logic
+middlewares > auth, form data passing
+models > mongoose model that contain the structure in which the data is stored
+routes > for diff purposes
+
+muhammadmunimoff330
+kr9LOhomIREUEUzG
